@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Roboto:wght@300;500;700;900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Itim', cursive;
+  /* font-family: 'Roboto', sans-serif; */
+}
+body {
+  background-image: linear-gradient(to right, #a1c4fd 0%, #c2e9fb 100%);
+  font-size: 20px;
+  height: 100%;
+}
+.theme{
+  font-size: 18px;
+  text-align: right;
+  padding-right: 9rem;
+}
+.colors{
+  display: flex;
+  justify-content: end;
+  padding-right: 3rem;
+}
+.themebtn{
+  margin: 0.1rem;
+   padding: 1rem;
+   border-radius: 50%;
+   border: none;
+   background-color: none;
+   cursor: pointer;
+   
+}
+.one{
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  
+}
+.two{
+  background-color: #85FFBD;
+background-image: linear-gradient(45deg, #ff5858 0%, #ffc8c8 100%);
+
+}
+.three{
+
+background-image: linear-gradient(45deg, #0e1c26 0%,#2a454b 60%, #294861 100%);
+
+}
+.four{
+
+  background-image: linear-gradient(45deg, #099773 0%, #dc419b 100%);
+  
+  }
+  .five{
+
+    background-image: linear-gradient(45deg, #fcef04 0%, #43b692 100%);
+    
+    }
+    .six{
+
+      background-image: linear-gradient(45deg, #8693AB 0%, #BDD4E7 100%);
+      
+      }
+  
+
+.heading {
+  padding-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #03203c;
+}
+.info {
+  font-size: 1.2rem;
+  color: #03203c;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+.notes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  gap: 1.8rem;
+  padding: 1.5rem;
+}
+.StikcyNotes {
+  padding: 1rem;
+  border-radius: 1rem;
+  resize: none;
+  width: 16rem;
+  height: 9rem;
+  color: #03203c;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.37);
+  border-radius: 16px;
+  backdrop-filter: blur(2.9px);
+  -webkit-backdrop-filter: blur(2.9px);
+  -webkit-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+  -moz-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+  box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.30);
+}
+.StikcyNotes::placeholder{
+    color: #676767;
+    opacity: 60%;
+}
+
+.StikcyNotes:hover,.StikcyNotes:focus {
+    -webkit-backdrop-filter: blur(2.9px);
+    -webkit-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    box-shadow: -2px -2px 17px -4px rgba(0, 0, 0, 0.75);
+    transition: all 300ms ease;
+
+}
+#btn{
+ 
+    border-radius: 1rem;
+    resize: none;
+    width: 16rem;
+    height: 9rem;
+    color: #03203c;
+    border: none;
+    font-size: 2rem;
+    outline: none;
+    border-color:rgba(255, 255,255,0.37);
+    background-color:rgba(255, 255,255,0.27);
+    color: rgba(0,0, 0,0.5);
+    cursor: pointer;
+}
+#btn:hover{
+    background-color:rgba(255, 255,255,0.55);
+    color: rgba(0,0, 0,0.6);
+    transition: all 300ms ease;
+
+}
