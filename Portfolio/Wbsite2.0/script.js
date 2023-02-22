@@ -2,7 +2,12 @@ const btn = document.querySelector(".btn-brgr");
 const head = document.querySelector("#header");
 const para = Array.from(document.querySelectorAll(".para")) 
 const brgr = Array.from(document.querySelectorAll(".burger")) 
+const brgrMob = Array.from(document.querySelectorAll(".burger-mob")) 
+
+
 const logotxt = document.querySelector(".logotexth")
+const divBtn = document.querySelector(".btn-brgr-mob")
+const headerOfMob = document.querySelector("#mobile-menu")
 
 console.log( brgr);
 
@@ -24,4 +29,13 @@ btn.addEventListener('click',function(){
      
     //  head.style.width = '200px';
     
+})
+
+divBtn.addEventListener('click', function(){
+   console.log("mobile-click");
+   headerOfMob.classList.toggle("mob-menu-full");
+
+   brgrMob.forEach(element => {
+        element.classList.toggle('burger-mob-two');
+     });
 })

@@ -16,7 +16,7 @@ html {
   font-size: 62.5%;
 }
 body{
-  background-color: #FCE029;
+  background-color: #a8a8a8;
 }
 #sing-page {
   display: flex;
@@ -76,7 +76,7 @@ body{
     width:1rem;
     }
 #header {
-  background-color: #231F20;
+  background-color: #2c4a6a;
   width: 8rem;
   height: 100vh;
   display: flex;
@@ -124,7 +124,7 @@ body{
   display: flex;
   align-items: center;
   justify-items: center;
-  color: #FCE029;
+  color: #a8a8a8;
   
 
   /* margin-right:0.5rem; */
@@ -134,18 +134,110 @@ body{
   color: #FFFFFF;
   margin-left: 0.5rem;
   margin-right: 3rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 #navigastion ul {
 /* border: 1px solid red; */
 margin-left: 0.6rem;
-
-
+}
+#mobile-menu{
+  display: none;
 }
 
 #main {
   max-width: 1200px;
-  margin-left: 200px;
-  background-color: #FCE029;
-  height: 100vh;
+ 
+  
 }
+/*
+@media only screen and (max-width: 580px) {
+     #header{
+      display: none;
+     }
+     #mobile-menu{
+      display: block;
+      width: 100vw;
+      height: 5rem;
+      background-color: rgb(25, 66, 52);
+      position:sticky;
+      top: 0;
+      transition: all 1s ease;
+
+
+     }
+     .logo-for-mob{
+      display: flex;
+      width: 100%;
+      height: 5rem;
+      justify-content: space-between;
+      align-items: center;
+      justify-items: center;
+      border: 1px solid red;
+      padding: 2rem;
+      font-size: 2rem;
+      color: #fff;
+      font-weight: 600;
+     }
+     .btn-brgr-mob{
+      position: relative;
+     }
+     .burger-mob{
+       width: 3rem;
+       height: 0.5rem;
+       margin: 0.5rem 0;
+       background-color: #fff;
+       border-radius:0.5rem;
+       cursor: pointer;
+       transition: all 1s ease;
+
+     }
+     .burger-mob-two:nth-child(1){
+      position: absolute;
+      top: 0.3rem;
+      transform: rotate(45deg);
+      transition:transform 1s ease;
+    }
+     .burger-mob-two:nth-child(2){
+       visibility: hidden;
+       transition: visibility 0.2s ease;
+     }
+     .burger-mob-two:nth-child(3){
+      position: absolute;
+      top:0.3rem;
+      transform: rotate(-45deg);
+      transition:transform 1s ease;
+    }
+    .mob-menu-full{
+      height: 100vh !important;
+     
+    }
+    #navigastion-mob ul{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      list-style-type: none;
+      margin-top: 2rem;
+      border: 1px solid #fff;
+      
+    }
+    #navigastion-mob ul li a{
+      display: flex;
+      justify-content:space-between;
+      align-items:flex-start;
+      padding: 1rem 2rem;
+      width: 20rem;
+      text-align: left;
+      border-radius: 0.5rem;
+      border: 1px solid #fff
+      margin: 1rem 0;
+      font-weight: 600;
+      color: #fff;
+    }
+    #navigastion-mob ul li a i{
+      margin:0 2rem;
+      
+    }
+}
+*/
