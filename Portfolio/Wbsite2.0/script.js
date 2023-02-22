@@ -34,6 +34,7 @@ btn.addEventListener('click',function(){
 divBtn.addEventListener('click', function(){
    console.log("mobile-click");
    headerOfMob.classList.toggle("mob-menu-full");
+   headerOfMob.classList.toggle("navigastion-mob2");
 
    brgrMob.forEach(element => {
         element.classList.toggle('burger-mob-two');
