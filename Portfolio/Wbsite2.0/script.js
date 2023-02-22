@@ -1,4 +1,4 @@
-const btn = document.querySelector("#btnclick");
+const btn = document.querySelector(".btn-brgr");
 const head = document.querySelector("#header");
 const para = Array.from(document.querySelectorAll(".para")) 
 const brgr = Array.from(document.querySelectorAll(".burger")) 

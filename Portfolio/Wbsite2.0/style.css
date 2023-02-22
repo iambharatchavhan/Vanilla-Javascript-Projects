@@ -15,16 +15,20 @@ html {
   scroll-padding-top: 6m;
   font-size: 62.5%;
 }
+body{
+  background-color: #FCE029;
+}
 #sing-page {
   display: flex;
-  border: 1px solid red;
+
 }
 #btnclick{
-    border: 1px solid black;
+
     display: flex;
     justify-content:flex-start;
     align-items: center;
     justify-items: center;
+    padding: 1rem 0;
 
 }
 .logo{
@@ -33,35 +37,33 @@ html {
     align-items: center;
     justify-items: center;
 }
-.logo i{
-    margin: 0 1rem ;
-    /* margin-top: 1.5rem; */
-    font-size: 3rem;
-}
+
 .logotexth{
    visibility: hidden;
   
 
 }
-.logotextv{
- visibility:visible;
- font-size: 2.5rem;
- color: #fff;
- font-weight: 700;
- transition: all 1s ease;
- 
-}
+
 .burger{
-    background-color: blue;
+    background-color: #FFFFFF;
     width:3rem;
     height: 0.5rem;
     margin:0.2rem 0;
     border-radius: 5px;
-    border: 1px solid red;
     transition: all 1s ease;
+    margin-left: -3rem;
 
    
 }
+.logotextv{
+  visibility:visible;
+  font-size: 2.5rem;
+  margin-right: 4rem;
+  color: #fff;
+  font-weight: 700;
+  transition: all 1s ease;
+  
+ }
 .coolbrger:nth-child(1){
     width:2rem;
  
@@ -74,14 +76,15 @@ html {
     width:1rem;
     }
 #header {
-  background-color: rgb(154, 71, 71);
-  width: 10rem;
+  background-color: #231F20;
+  width: 8rem;
   height: 100vh;
   display: flex;
   flex-direction: column;
   position: fixed;
   top: 0;
   left: 0;
+  padding:1rem;
   /* overflow: hidden; */
   transition: all 1s ease;
 }
@@ -91,19 +94,58 @@ html {
 }
 
 .para2 {
-  color: red;
+  color: #FFFFFF;
   offset: 1;
   visibility: visible;
   transition: all 1s ease;
 }
-
+.btn-brgr{
+  cursor: pointer;
+}
 .head {
-  width: 20rem !important;
+  width: 18rem !important;
 }
-#btnclick {
-  padding: 1rem;
+#navigastion ul{
+  /* padding: 1rem; */
+  font-size: 1.7rem;
+  list-style-type: none;
+  margin-top: 3rem;
+  text-align: justify;
 }
+
+#navigastion ul li{
+  margin: 2rem 0;
+  padding:1rem 0;
+  border-radius: 0.2rem;
+  
+  
+}
+#navigastion ul li a {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  color: #FCE029;
+  
+
+  /* margin-right:0.5rem; */
+  font-weight: 700;
+}
+#navigastion ul li a i{
+  color: #FFFFFF;
+  margin-left: 0.5rem;
+  margin-right: 3rem;
+  font-size: 2.5rem;
+}
+#navigastion ul {
+/* border: 1px solid red; */
+margin-left: 0.6rem;
+
+
+}
+
 #main {
   max-width: 1200px;
   margin-left: 200px;
+  background-color: #FCE029;
+  height: 100vh;
 }
