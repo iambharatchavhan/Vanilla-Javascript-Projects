@@ -1,7 +1,98 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
- background-color: rgb(124, 124, 124);
+
+#header{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /* border: 1px solid red; */
+    margin-bottom: 1rem;
+}
+#logo>img{
+    width: 50%;
+}
+#searchInput{
+   padding: 0.7rem 2rem;
+   border-radius: 1.5rem;
+   outline: none;
+   border: none;
+   font-size:1.2rem ;
+   border: 1px solid #5c255c;
+
+} 
+#searchInput::placeholder{
+     font-size: 1.2rem;
+     color: #5c255c;
+}
+#btnSearch{
+    padding: 0.7rem 2rem;
+    border-radius: 1.5rem;
+    border: none;
+    font-weight:600;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #5c255c;
+    font-size: 1.2rem;
+}
+#card{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+#card img{
+    width: 320px;
+    height: 260px;
+}
+#subCard{
+    max-width: 320px;
+    border: 1px solid blue;
+    background-color: azure;
+    border-radius: .5rem;
+    overflow: hidden;
+    text-align: justify;
+    margin: 1rem 2rem;
+
+
+}
+#info{
+    padding: 1rem;
+    text-align:left
+}
+#info p{
+    font-size: 1rem;
+    padding:0.1rem 0;
+}
+
+/* #logo>img{
+    width:10rem;
+} */
+
+@media screen and (max-width: 768px) {
+
+    #header{
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        /* border: 1px solid green; */
+    }
+    #logo>img{
+        width: 100%;
+    }
+    #searchInput{
+        margin: 1rem;
+    }
+    #search{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
