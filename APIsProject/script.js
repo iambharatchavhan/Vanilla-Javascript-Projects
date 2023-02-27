@@ -2,36 +2,41 @@ let img = document.getElementById('theImg')
 let card = document.getElementById('card')
 // console.log(img,card);
 function allChar() {
-    for(let i=0 ; i<59 ; i++){
-        // console.log(i);
-  
-  fetch(`https://thronesapi.com/api/v2/Characters/${i}`)
-    .then(function (response) {
-      return response.json()
-    })
-    .then(function (data) {
-    //   console.log(data)
-    //   console.log(data.fullName)
-    //   console.log(data.title)
-    //   console.log(data.imageUrl)
+  for (let i = 0; i < 53; i++) {
+    // console.log(i);
 
-      card.innerHTML += `
-      <div id="subCard">
-      <div id="img">
-        <img src="${data.imageUrl}" alt="" id="theImg">
+    fetch(`https://thronesapi.com/api/v2/Characters/${i}`)
+      .then(function (response) {
+        return response.json()
+      })
+      .then(function (data) {
+        // console.log(data)
+        // console.log(data.id)
+        //   console.log(data.title)
+        //   console.log(data.imageUrl)
+
+        card.innerHTML += `
+      <div class="flex-container-cards">
+  
+  <div class="card">
+    <div class="card-img-shadow"><img src="${data.imageUrl}" alt="img"></div>
+    <div class="card-content">
+      <h2>${data.fullName}</h2>
+      <p>Family : <span>${data.family}</span></p>
+      <p>Status : <span>${data.title}</span></p>
+      <div class="button-shadow">
+        <div class="card-button">Know More</div>
       </div>
-      <div id="info">
-        <p class="name">Name  : <span class="fullName">${data.fullName}</span></p>
-        <p class="name">Title: <span class="title">${data.title}</span></p>
-        <p class="name">family: <span class="family">${data.family}</span></p>
-      </div>
+    </div>
   </div>
+  
+</div>
       
       `
-    })
-    .catch(function (error) {
-      console.error(error)
-    })
+      })
+      .catch(function (error) {
+        console.error(error)
+      })
+  }
 }
-}
-allChar();
+allChar()
