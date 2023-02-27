@@ -2,7 +2,7 @@ let img = document.getElementById('theImg')
 let card = document.getElementById('card')
 // console.log(img,card);
 function allChar() {
-  for (let i = 0; i < 53; i++) {
+  for (let i = 0; i < 50; i++) {
     // console.log(i);
 
     fetch(`https://thronesapi.com/api/v2/Characters/${i}`)

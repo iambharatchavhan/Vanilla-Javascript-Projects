@@ -12,6 +12,10 @@ body {
   color: rgb(211, 211, 211);
   background: rgb(12, 12, 12);
 }
+#header{
+  border-bottom: 1px solid #e94b3cff;
+  margin-top: -2rem;
+}
 
 #logo > img {
   width: 50%;
@@ -55,7 +59,7 @@ p {
   color: #e94b3cff;
 }
 p span {
-  color: aliceblue;
+  color: #f0f8ff;
 }
 #card {
   display: flex;
@@ -144,7 +148,7 @@ p span {
   margin: 0px 30px;
 }
 .flex-container-cards .card h2 {
-  color: #e94b3cff;
+  color: #999999;
   text-align: center;
 }
 .flex-container-cards .card .button-shadow {
@@ -189,9 +193,40 @@ p span {
   align-items: center;
   /* border: 1px solid red; */
   margin-bottom: 1rem;
+
+}
+.footer{
+    /* border-top: 1px solid #e94b3cff; */
+    display: flex;
+    justify-content:space-between;
+    padding: 0.5rem;
+    cursor: pointer;
+  
+}
+.footer p{
+    color: #fff;
+}
+.letf, .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 2rem;
+}
+.right{
+   margin-right:4rem;
+}
+.right i {
+    border: 1px solid #fff;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
 @media (max-width: 780px) {
+    #header{
+        border: none;
+    }
   #header img {
     width: 100%;
   }
@@ -199,5 +234,20 @@ p span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .footer{
+    flex-direction: column;
+    font-size: 0.5rem;
+    text-align: center;
+    /* border: 1px solid red; */
+  }
+  .letf{
+    text-align: center;
+  }
+  .right{
+    margin: 0;
+  }
+  .right i {
+    font-size: 1rem;
   }
 }
