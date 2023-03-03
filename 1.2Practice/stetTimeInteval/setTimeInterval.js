@@ -8,8 +8,8 @@ const theH1 = document.querySelector(".h1");
 
 function randomColors (){
    let red = Math.floor(Math.random() * 999) +100;
-   let blue= Math.floor(Math.random() * 999) +10;
-   let green = Math.floor(Math.random() * 999) +100;
+   let blue= Math.floor(Math.random() * 999) +100;
+//    let green = Math.floor(Math.random() * 999) +100;
 //    let angle = Math.floor(Math.random() * 360) +30 ;
     // console.log(red ,blue,green);
 
