@@ -43,8 +43,10 @@ function allChar(a, b) {
 
       btnSearch.addEventListener('click', ()=>{
         theText = inputV.value;
+        
 
-      inputV.value =""
+        
+        inputV.value =""
       })
     })
 
