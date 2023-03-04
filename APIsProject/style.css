@@ -13,7 +13,7 @@ body {
   background: rgb(12, 12, 12);
 }
 #header{
-  border-bottom: 1px solid #e94b3cff;
+  border-bottom: 1px solid rgb(121, 14, 4);
   margin-top: -2rem;
 }
 
@@ -32,7 +32,7 @@ body {
   font-size: 1.2rem;
   color: #5c255c;
 }
-#btnSearch {
+#btnSearch, .btnNextbtn {
   padding: 0.9rem 3rem;
   border: none;
   font-size: 1rem;
@@ -42,7 +42,7 @@ body {
   background: linear-gradient(45deg, rgb(255, 30, 0) 0%, rgb(133, 78, 75) 100%);
   transition: all 0.2s ease-in;
 }
-#btnSearch:hover {
+#btnSearch:hover ,.btnNextbtn:hover {
   font-size: 1rem;
   color: #fff;
 }
@@ -221,6 +221,12 @@ p span {
     padding: 0.5rem;
     font-size: 1.5rem;
     color: #fff;
+}
+.btnNext{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+
 }
 
 @media (max-width: 780px) {
