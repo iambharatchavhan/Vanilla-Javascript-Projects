@@ -239,6 +239,10 @@ p span {
   margin-left: -10rem;
 
 }
+.card-content h2:nth-child(2){
+  position: absolute;
+  color:#282727 ;
+}
 
 @media (max-width: 780px) {
     #header{
