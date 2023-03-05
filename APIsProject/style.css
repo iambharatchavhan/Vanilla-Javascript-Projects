@@ -228,6 +228,17 @@ p span {
   justify-content: center;
 
 }
+#backBtn{
+  padding: 0.3rem 2rem;
+  font: 1.2rem;
+  font-weight: 700;
+  border: none;
+  background-color: #d50a0a;
+  color: #fff;
+  border-radius: .2rem;
+  margin-left: -10rem;
+
+}
 
 @media (max-width: 780px) {
     #header{
@@ -256,4 +267,6 @@ p span {
   .right i {
     font-size: 1rem;
   }
+
+
 }
