@@ -1,4 +1,4 @@
-// lets create new promise
+// lets create new promise //Browser api // asynch 
 
 const promiseArray = ['one', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven']
 
@@ -38,8 +38,14 @@ const myPromise = new Promise((resolve, reject) => {
 //     console.log('hehhehe ', resolve)
 //   })
 
-//*   also do chaining  using catch errore 
+//*   also do chaining  using catch errore
 
-myPromise.then((resolve) => {
+myPromise
+  .then((resolve) => {
     console.log('hehhehe ', resolve)
-  }).catch((reject)=>{console.log("reject");})
+  })
+  .catch((reject) => {
+    console.log('reject')
+  })
+
+//* you can handle error like this also 
