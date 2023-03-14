@@ -24,20 +24,21 @@ allBtns.forEach(button => button.addEventListener('click',(e)=>{
 
 function autoComputerChoice (){
     const randomNumber = Math.floor(Math.random() * 3) +1 // or all buttons length
-    console.log(randomNumber);
+    // console.log(randomNumber);
   if(randomNumber === 1){
     autoCompChoice = "rock"
   }
   if(randomNumber === 2){
     autoCompChoice = "scissors"
   }
-  if(randomNumber === 1){
+  if(randomNumber === 3){
     autoCompChoice = "paper"
   }
   compChoice.innerHTML = autoCompChoice;
 }
 
 function getResult (){
+   
   if(autoCompChoice === userChoice){
     theResult = "Draw"
   }
